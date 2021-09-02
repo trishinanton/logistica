@@ -42,7 +42,6 @@ $(document).ready(function(){
         });
 
         /* Фиксированное меню */
-    $(document).ready(function($) {
         var g_top = 0;
         $(window).scroll(function() {
         var top = $(this).scrollTop();
@@ -55,7 +54,7 @@ $(document).ready(function(){
         
         g_top = top;    
         });
-    });
+
     $(window).on("scroll", function () {
         var scrolled = $(this).scrollTop();
         if( scrolled > 200 ) {
