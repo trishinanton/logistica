@@ -70,7 +70,6 @@ button:hover {
   background: #2B2B51;
   position: relative;
   z-index: 1;
-  z-index: 10;
   color: white;
   display: flex;
   flex-direction: column;
@@ -93,7 +92,7 @@ button:hover {
   filter: blur(2px);
   transform: rotate(-45deg);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  right: 120px;
+  right: 5px;
   bottom: -60px;
 }
 .header {
@@ -279,10 +278,11 @@ button:hover {
   width: 50%;
   position: fixed;
   left: 50%;
-  z-index: 3;
+  z-index: 11;
   text-align: center;
   padding: 16vh 0 10vh;
   box-sizing: border-box;
+  top: 0;
 }
 @keyframes show_active_menu {
   0% {
@@ -425,8 +425,9 @@ button:hover {
 /* Об услуге */
 .about {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   background: #2B2B51;
+  padding: 92px 0;
 }
 .about:after {
   content: '';
@@ -443,27 +444,25 @@ button:hover {
 }
 .about__name {
   position: relative;
-  margin-top: 102px;
 }
 .about__content {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .about__description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
-  height: 662px;
 }
 .about__purpose {
   line-height: 22px;
-  margin-right: 60px;
   margin-left: 4px;
   color: white;
 }
 .about__purpose > p {
-  margin-top: 20px;
+  margin-top: 35px;
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -739,19 +738,19 @@ button:hover {
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 25px;
+  line-height: 1.1em;
 }
 .stages-footer__description > strong {
-  font-size: 24px;
+  font-size: 22px;
 }
 /* Другие услуги компании */
 .services {
   position: relative;
   z-index: 1;
   padding-bottom: 70px;
+  padding-top: 65px;
 }
 .services__name {
-  margin-top: 100px;
   margin-bottom: 71px;
   font-size: 58px;
   -webkit-text-stroke: 2px #2B2B51;
@@ -951,7 +950,7 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.2em;
   color: white;
 }
 .consultation-form__description > span {

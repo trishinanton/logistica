@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  .d-m {
+    display: block;
+  }
   .grid {
     display: none;
   }
@@ -43,6 +46,10 @@
   }
   .main-screen:after {
     background-position: 40% center;
+  }
+  .main-screen .block-header > span:after {
+    top: 47px;
+    right: -40px;
   }
   .main-br {
     display: none;
@@ -101,10 +108,10 @@
   }
   .about__purpose {
     margin-right: 0px;
-    line-height: 18px;
+    line-height: 1.3em;
   }
   .about__purpose > p {
-    font-size: 16px;
+    font-size: 19px;
   }
   .about .img-caption {
     top: 58%;
@@ -168,9 +175,21 @@
   .event {
     margin-top: 109px;
   }
+  .event__name {
+    margin-left: 4px;
+  }
+  .event__description {
+    line-height: 1.3em;
+    margin-top: 20px;
+    margin-top: 15px;
+    margin-left: 4px;
+  }
+  .event__footer {
+    margin-left: 4px;
+  }
   .block-header {
     margin-top: 0px;
-    line-height: 62px;
+    line-height: 1.2em;
   }
   .block-header:after {
     display: none;
@@ -191,6 +210,16 @@
   }
   .enterns-card {
     width: 100%;
+  }
+  .enterns-card__description {
+    font-size: 21px;
+  }
+  .enterns .block-header > span:after {
+    top: -16px;
+    right: -115px;
+  }
+  .enterns__footer {
+    font-size: 20px;
   }
   /* Другие услуги компании */
   .services__name {

@@ -25,6 +25,9 @@ button:hover {
 .d-sm {
   display: none;
 }
+.d-m {
+  display: none;
+}
 .container {
   padding: 0 10%;
 }
@@ -69,8 +72,6 @@ button:hover {
   margin-top: 143px;
   background: #2B2B51;
   position: relative;
-  z-index: 1;
-  z-index: 10;
   color: white;
   display: flex;
   flex-direction: column;
@@ -425,8 +426,9 @@ button:hover {
 /* Об услуге */
 .about {
   position: relative;
-  z-index: 1;
+  z-index: -1;
   background: #2B2B51;
+  padding: 92px 0px;
 }
 .about:after {
   content: '';
@@ -443,7 +445,6 @@ button:hover {
 }
 .about__name {
   position: relative;
-  margin-top: 102px;
 }
 .about__content {
   display: flex;
@@ -454,11 +455,9 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
-  height: 662px;
 }
 .about__purpose {
   line-height: 22px;
-  margin-right: 60px;
   margin-left: 4px;
   color: white;
 }
@@ -687,7 +686,7 @@ button:hover {
 .stages__name {
   -webkit-text-stroke: 2px #2b2b51;
   font-size: 31px;
-  line-height: 50px;
+  line-height: 1.4em;
   margin-bottom: 68px;
 }
 .stages .block-header:after {
@@ -700,7 +699,7 @@ button:hover {
 }
 .stages-card {
   position: relative;
-  width: 30vw;
+  width: 40%;
   height: 98px;
   display: flex;
   align-items: center;
@@ -718,7 +717,7 @@ button:hover {
   padding: 0px 25px;
   line-height: 97px;
   margin-bottom: 50px;
-  margin-left: -55px;
+  transform: translateX(-41%);
 }
 .stages-card__description {
   font-weight: bold;
@@ -728,9 +727,7 @@ button:hover {
   width: 344px;
 }
 .stages-card .number-right {
-  margin-right: -55px;
-  left: auto;
-  margin-left: 0px;
+  transform: translateX(41%);
 }
 .stages-card .description-right {
   padding-right: 89px;
@@ -755,7 +752,6 @@ button:hover {
   margin-right: 57px;
   position: relative;
   flex-direction: row-reverse;
-  justify-content: flex-end;
 }
 .stages-card:nth-child(even):after {
   content: '';
@@ -775,6 +771,9 @@ button:hover {
   padding-top: 92px;
   padding-bottom: 185px;
   z-index: 0;
+}
+.graph .d-s {
+  display: none;
 }
 .graph__europe {
   position: relative;
@@ -980,13 +979,13 @@ button:hover {
   font-family: Arial;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 37px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   -webkit-text-stroke: 1px #FFFFFF;
   color: transparent;
-  margin-top: 20px;
+  margin-top: 77px;
   margin-bottom: 20px;
   margin-left: 4px;
 }
@@ -995,7 +994,8 @@ button:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 35px;
+  margin-top: 20px;
+  line-height: 1.3em;
   color: white;
   margin-left: 4px;
 }
@@ -1021,7 +1021,8 @@ button:hover {
   padding-bottom: 20px;
 }
 .price .block-header:after {
-  top: 40px;
+  top: 26px;
+  right: -38px;
 }
 .price__description {
   font-family: 'Arial';

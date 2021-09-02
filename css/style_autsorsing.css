@@ -25,6 +25,9 @@ button:hover {
 .d-sm {
   display: none;
 }
+.d-m {
+  display: none;
+}
 .container {
   padding: 0 10%;
 }
@@ -69,12 +72,11 @@ button:hover {
   margin-top: 143px;
   background: #2B2B51;
   position: relative;
-  z-index: 1;
-  z-index: 10;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  --animation: floating 2s infinite ease-out;
 }
 .main-screen__header {
   padding: 16px 3%;
@@ -95,6 +97,18 @@ button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   right: 120px;
   bottom: -60px;
+  animation: var(--animation);
+}
+@keyframes floating {
+  0% {
+    bottom: -50px;
+  }
+  50% {
+    bottom: -55px;
+  }
+  100% {
+    bottom: -50px;
+  }
 }
 .header {
   display: flex;
@@ -279,7 +293,8 @@ button:hover {
   width: 50%;
   position: fixed;
   left: 50%;
-  z-index: 3;
+  z-index: 11;
+  top: 0;
   text-align: center;
   padding: 16vh 0 10vh;
   box-sizing: border-box;
@@ -425,8 +440,9 @@ button:hover {
 /* Об услуге */
 .about {
   position: relative;
-  z-index: 1;
+  z-index: -1;
   background: #2B2B51;
+  padding: 97px 0;
 }
 .about:after {
   content: '';
@@ -443,22 +459,20 @@ button:hover {
 }
 .about__name {
   position: relative;
-  margin-top: 102px;
 }
 .about__content {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .about__description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
-  height: 662px;
 }
 .about__purpose {
   line-height: 22px;
-  margin-right: 60px;
   margin-left: 4px;
   color: white;
 }
@@ -468,6 +482,9 @@ button:hover {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.3px;
+}
+.about__purpose > p:first-child {
+  margin-top: 35px;
 }
 .about__sliders {
   display: flex;
@@ -526,12 +543,11 @@ button:hover {
   position: relative;
   z-index: 1;
 }
-.event {
-  padding-bottom: 81px;
-}
 .event__name {
+  margin-top: 77px;
   font-family: Arial;
   font-style: normal;
+  margin-bottom: 8px;
   font-weight: 900;
   font-size: 26px;
   line-height: 37px;
@@ -580,6 +596,7 @@ button:hover {
   justify-content: space-between;
   margin-top: 60px;
   padding: 0px 6px 0 4px;
+  position: relative;
 }
 .enterns-card {
   display: flex;
@@ -588,6 +605,7 @@ button:hover {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   margin-bottom: 54px;
   position: relative;
+  background-color: #fff;
 }
 .enterns-card__number {
   width: 132.3px;
@@ -613,13 +631,14 @@ button:hover {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center;
   padding-left: 162px;
   padding-right: 30px;
 }
 .enterns__footer {
   color: #2B2B51;
   margin-left: 4px;
+  font-size: 22px;
+  margin-top: 22px;
 }
 /* Другие услуги компании */
 .services {

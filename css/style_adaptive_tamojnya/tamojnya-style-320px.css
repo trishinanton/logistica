@@ -1,13 +1,4 @@
-@media screen and (max-width: 420px) {
-  .fz-sm-14 {
-    font-size: 14px !important;
-  }
-  .d-sm {
-    display: block;
-  }
-  .d-lm {
-    display: none;
-  }
+@media screen and (max-width: 320px) {
   .grid {
     display: none;
   }
@@ -32,7 +23,7 @@
   }
   .body__name {
     margin-bottom: 0px;
-    font-size: 33px;
+    font-size: 27px;
   }
   .body__header {
     padding: 20px 0 20px;
@@ -64,16 +55,11 @@
   .main-screen {
     margin-top: 89px;
   }
-  .main-screen::after {
-    display: none;
-  }
-  .main-screen .block-header {
-    font-size: 25px;
-    line-height: 0.7em;
-  }
-  .main-screen .block-header > span:after {
-    top: 16px;
-    right: -39px;
+  .main-screen .block-header > span::after {
+    width: 42px;
+    height: 24px;
+    top: -7px;
+    right: -27px;
   }
   .menu {
     margin-right: 18px;
@@ -115,34 +101,13 @@
   }
   /* О компании */
   .about {
-    padding: 60px 0px 137px;
-    overflow: unset;
+    padding: 60px 0px 0px;
   }
-  .about .block-header > span:after {
-    top: -14px;
-    right: -40px;
-  }
-  .about:after {
-    width: 70px;
-    height: 70px;
-    border: 14px solid #FFFFFF;
-    filter: blur(2px);
-    box-shadow: -11px 18px 20px rgba(0, 0, 0, 0.2);
-    left: unset;
-    bottom: -19px;
-    right: 31px;
-  }
-  .about:before {
-    right: -18.3px;
-    width: 22px;
-    height: 22px;
-    content: '';
-    position: absolute;
-    transform: rotate(45deg);
-    filter: blur(3px);
-    border: 11px solid #FFFFFF;
-    bottom: 56px;
-    top: unset;
+  .about .block-header > span::after {
+    width: 42px;
+    height: 24px;
+    top: -7px;
+    right: -27px;
   }
   .about__content {
     flex-direction: column;
@@ -156,8 +121,8 @@
     line-height: 18px;
   }
   .about__purpose > p {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 13px;
+    margin-top: 21px;
   }
   .about .img-caption {
     top: 58%;
@@ -218,28 +183,10 @@
   .about .sliders-button {
     margin-right: 10px;
   }
-  .event {
-    margin-top: 0;
-  }
-  .event__description {
-    font-size: 16px;
-    margin-top: 21px;
-  }
-  .event__footer {
-    font-size: 16px;
-    margin-top: 26px;
-  }
-  .event__name {
-    margin-bottom: 25px;
-    margin-top: 0px;
-    font-size: 23px;
-    line-height: 1.4em;
-  }
   .block-header {
     margin-top: 9px;
-    line-height: 38px;
-    font-size: 34px;
-    -webkit-text-stroke-width: 1px;
+    line-height: 1.2em;
+    font-size: 31px;
   }
   .block-header:after {
     display: none;
@@ -253,52 +200,81 @@
     background-image: url(../../img/about/crosses_for_header.png);
     background-size: cover;
     z-index: 2;
-    width: 67px;
-    height: 36px;
-    top: -11px;
-    right: -44px;
+    width: 42px;
+    height: 24px;
+    top: -7px;
+    right: -27px;
   }
-  .enterns {
-    padding-top: 73px;
+  /* Этапы таможенного офрмления */
+  .stages {
+    padding: 39px 0 0px;
   }
-  .enterns .block-header {
-    line-height: 1.4em;
+  .stages__name {
+    font-size: 26px;
   }
-  .enterns .block-header > span:after {
-    top: -17px;
-    right: -99px;
+  .stages .block-header {
+    line-height: 1.3em;
   }
-  .enterns__name {
-    font-size: 23px;
+  .stages .block-header > span:after {
+    top: 24px;
+    right: -50px;
   }
-  .enterns-card {
-    margin-bottom: 27px;
+  .stages__description {
+    width: 100%;
+    margin-bottom: 0px;
   }
-  .enterns-card__description {
-    font-size: 14px;
-    padding-left: 140px;
-    padding-right: 3px;
-    height: 136px;
+  .stages__description-left {
+    left: 0;
+    align-self: center;
   }
-  .enterns-card__number {
-    height: 136px;
-    width: 117.3px;
+  .stages__description-right {
+    right: 0;
+    align-self: center;
   }
-  .enterns__footer {
-    font-size: 18px;
+  .stages .registration {
+    background-color: transparent;
+    width: 100%;
+    height: 237px;
+    flex-direction: column;
+  }
+  .stages .registration::before {
+    display: none;
+  }
+  .stages .registration:after {
+    display: none;
+  }
+  .stages .registration__phase {
+    color: #2B2B51;
+  }
+  .stages .registration__contain {
+    color: #2B2B51;
+    align-items: center;
+  }
+  .stages .registration__name {
+    font-size: 12px !important;
+    text-align: center;
+  }
+  .stages .registration__description {
+    font-size: 13px;
+    text-align: center;
+  }
+  .stages .registration__number {
+    color: #2B2B51;
+  }
+  .stages .registration__number:before {
+    color: rgba(43, 43, 81, 0.33);
+  }
+  .stages-footer__description {
+    font-size: 12px;
+    margin-left: 4px;
   }
   /* Другие услуги компании */
-  .services {
-    padding-bottom: 60px;
-  }
-  .services__name {
-    font-size: 30px;
-    margin-top: 63px;
-    margin-bottom: 24px;
+  .services .block-header {
+    font-size: 26px;
   }
   .services .block-header > span::after {
-    right: -124px;
-    top: -16px;
+    right: -97px;
+    top: -7px;
   }
   .services__description {
     flex-direction: column;
@@ -308,57 +284,35 @@
     height: 418px;
   }
   .services-card__title {
-    top: 300px;
-  }
-  .services-card__btn {
-    top: 305px;
-  }
-  .services-card--hover .services-card__title {
-    top: 264px;
-  }
-  .services-card--hover .services-card__btn {
-    top: 274px;
+    font-size: 23px;
   }
   /* Индивидуальная консультация */
   .consultation {
     background-color: #2B2B51;
-    padding: 28px 0 10px;
+    padding: 60px 0 10px;
   }
   .consultation__name {
-    -webkit-text-stroke: 1px white;
-    font-size: 25px !important;
+    font-size: 22px !important;
+    font-size: 25px;
   }
   .consultation-br {
     display: none;
   }
   .consultation .block-header > span:after {
-    right: -90px;
-    top: -17px;
+    right: -69px;
+    top: -11px;
   }
   .consultation-form {
     background-color: transparent;
     margin: 0;
-    padding: 25px 4px 57px 4px;
+    padding: 37px 4px 57px 4px;
     box-shadow: none;
   }
   .consultation-form:before {
     display: none;
   }
   .consultation-form__description {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .consultation-form__description:before {
-    content: '';
-    position: absolute;
-    transform: rotate(45deg);
-    width: 22px;
-    height: 22px;
-    border: 15px solid #FFFFFF;
-    left: -16%;
-    top: 54%;
-    filter: blur(4px);
-    z-index: 0;
+    font-size: 12px;
   }
   .consultation-form__contact {
     flex-direction: column;
@@ -378,7 +332,6 @@
     height: 83px;
     border: 18px solid #FFFFFF;
     left: 250px;
-    filter: blur(3px);
     z-index: 0;
   }
   .consultation .form-tamojnya {
@@ -422,7 +375,10 @@
     width: 100%;
   }
   .footer-logo__name {
-    font-size: 12px;
+    font-size: 9px;
+  }
+  .footer-logo__img {
+    width: 90px;
   }
   .footer-services__name {
     text-align: center;

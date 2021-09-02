@@ -9,10 +9,10 @@
     width: 390px;
   }
   .logo-image {
-    width: 155px;
+    width: 113px;
   }
   .logo-name {
-    font-size: 18px;
+    font-size: 14px;
   }
   .header__number {
     font-size: 20px;
@@ -25,6 +25,9 @@
   }
   .main-screen {
     background-position: 39% 50%;
+  }
+  .main-screen .block-header {
+    font-size: 43px;
   }
   .advantage__name-size {
     width: 165px;
@@ -39,7 +42,7 @@
     top: -16px;
   }
   .about__purpose > p {
-    font-size: 15px;
+    font-size: 13px;
   }
   .sliders .slider-about {
     width: 400px;
@@ -54,10 +57,19 @@
   .sliders .slider-about > img {
     width: 100%;
   }
+  .event__name {
+    font-size: 23px;
+  }
+  .event__footer {
+    font-size: 15px;
+  }
   .enterns__name {
     font-size: 31px;
   }
   .enterns-card__description {
+    font-size: 10px;
+  }
+  .enterns__footer {
     font-size: 16px;
   }
   /* Индивидуальная консультация */

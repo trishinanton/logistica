@@ -103,7 +103,7 @@
   }
   /* О компании */
   .about {
-    padding: 60px 0px 30px;
+    padding: 60px 0px 0px;
     overflow: unset;
   }
   .about .block-header > span:after {
@@ -146,6 +146,7 @@
   .about__purpose > p {
     font-size: 16px;
     line-height: 20px;
+    margin-top: 28px;
   }
   .about .img-caption {
     top: 58%;
@@ -231,7 +232,7 @@
   }
   /* Этапы таможенного офрмления */
   .stages {
-    padding: 50px 0 60px;
+    padding: 50px 0 48px;
   }
   .stages__name {
     font-size: 30px;
@@ -277,12 +278,13 @@
   .stages .registration__name {
     font-size: 16px;
     text-align: center;
+    line-height: 1.2em;
   }
   .stages .registration__description {
     font-size: 14px;
     text-align: center;
   }
-  .stages .registration__description br {
+  .stages .registration__description .d-lm {
     display: none;
   }
   .stages .registration__number {
@@ -292,9 +294,9 @@
     color: rgba(43, 43, 81, 0.33);
   }
   .stages .registration__span {
-    margin-top: 3px;
+    margin-top: 5px;
     margin-bottom: 3px;
-    height: 4px;
+    height: 5px;
     background-color: rgba(43, 43, 81, 0.2);
   }
   .stages-footer__description {
@@ -308,10 +310,10 @@
   /* Другие услуги компании */
   .services {
     padding-bottom: 60px;
+    padding-top: 27px;
   }
   .services__name {
     font-size: 30px;
-    margin-top: 63px;
     margin-bottom: 24px;
   }
   .services .block-header > span::after {
@@ -340,7 +342,7 @@
   /* Индивидуальная консультация */
   .consultation {
     background-color: #2B2B51;
-    padding: 60px 0 10px;
+    padding: 28px 0 10px;
   }
   .consultation__name {
     -webkit-text-stroke: 1px white;
@@ -401,6 +403,7 @@
   }
   .consultation .form-tamojnya {
     flex-direction: column;
+    margin-top: 37px;
   }
   .consultation .form-tamojnya__whats {
     margin-left: 0px;

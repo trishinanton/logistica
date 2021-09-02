@@ -115,11 +115,9 @@
     }
         /* О компании */
     .about{
-        padding: 60px 0px 30px;
+        padding: 60px 0px 0px;
         overflow: unset;
-        &:before{
-            
-        }
+        
        
        .block-header>span{
            &:after{
@@ -164,6 +162,7 @@
             &>p{
                 font-size: 16px;
                 line-height: 20px;
+                margin-top: 28px;
             }
         }
         .img{
@@ -263,7 +262,7 @@
 
     /* Этапы таможенного офрмления */
     .stages{
-        padding: 50px 0 60px;
+        padding: 50px 0 48px;
         &__name{
             font-size: 30px;
             line-height: 34px;
@@ -309,11 +308,12 @@
              &__name{
                 font-size: 16px;
                 text-align: center;
+                line-height: 1.2em;
             }
             &__description{
                 font-size: 14px;
                 text-align: center;
-                & br{
+                .d-lm{
                     display: none;
                 }
             }
@@ -325,9 +325,9 @@
             }
             &__span{
                 // border: 2px solid rgba(43, 43, 81, 0.2);
-                margin-top: 3px;
+                margin-top: 5px;
                 margin-bottom: 3px;
-                height: 4px;
+                height: 5px;
                 background-color:rgba(43, 43, 81, 0.2) ;
             }
         }
@@ -345,9 +345,10 @@
     /* Другие услуги компании */
     .services{
         padding-bottom: 60px;
+        padding-top:27px;
         &__name{
             font-size: 30px;
-            margin-top: 63px;
+            
             margin-bottom: 24px;
         }
         .block-header >span{
@@ -383,7 +384,7 @@
     /* Индивидуальная консультация */
     .consultation{
         background-color: #2B2B51;
-        padding: 60px 0 10px;
+        padding: 28px 0 10px;
         &__name{
             -webkit-text-stroke: 1px white;
             font-size: 25px !important;
@@ -447,6 +448,7 @@
         .form{
             &-tamojnya{
                 flex-direction: column;
+                margin-top: 37px;
                 &__whats{
                     margin-left: 0px;
                     margin-top: 16px;

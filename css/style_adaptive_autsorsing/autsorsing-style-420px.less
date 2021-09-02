@@ -8,6 +8,9 @@
     .d-sm{
         display: block;
     }
+    .d-lm{
+        display: none;
+    }
     .grid{
         display: none;
         &-adaptive{
@@ -68,13 +71,18 @@
         &::after{
             display: none;
         }
-        .block-header>span{
+        .block-header{
+            font-size: 25px;
+            line-height: 0.7em;
+            &>span{
             &:after{ 
-            top: -14px;
-            right: -144px;
+                top: 16px;
+                right: -39px;
 
             }
         }
+        }
+        
     }
     
     .menu{
@@ -123,12 +131,8 @@
     }
         /* О компании */
     .about{
-        padding: 60px 0px 30px;
+        padding: 60px 0px 137px;
         overflow: unset;
-        &:before{
-            
-        }
-       
        .block-header>span{
            &:after{
             top: -14px;
@@ -248,6 +252,8 @@
         margin-top: 0;
         &__description{
             font-size: 16px;
+            margin-top: 21px;
+
         }
         &__footer{
             font-size: 16px;
@@ -255,6 +261,10 @@
         }
         &__name{
             margin-bottom: 25px;
+            margin-top: 0px;
+             font-size: 23px;
+             line-height: 1.4em;
+
         }
     }
 
@@ -284,15 +294,36 @@
 
     //Что входит в услуги аутсорсинга
     .enterns{
+        padding-top: 73px;
+        .block-header{
+            line-height: 1.4em;
+            &>span{
+                &:after{
+                    top: -17px;
+                    right: -99px;
+                }
+            }
+        }
         &__name{
             font-size: 23px;
         }
         &-card{
+            margin-bottom: 27px;
             &__description{
                 font-size: 14px;
                 padding-left: 140px;
                 padding-right: 3px;
+                height: 136px;
             }
+            &__number{
+                height: 136px;
+                width: 117.3px;
+            }
+        }
+        &__footer{
+            font-size: 18px;
+            
+
         }
     } 
     
@@ -337,7 +368,7 @@
     /* Индивидуальная консультация */
     .consultation{
         background-color: #2B2B51;
-        padding: 60px 0 10px;
+        padding: 28px 0 10px;
         &__name{
             -webkit-text-stroke: 1px white;
             font-size: 25px !important;

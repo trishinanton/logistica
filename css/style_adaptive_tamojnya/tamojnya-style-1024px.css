@@ -5,14 +5,17 @@
   .grid {
     padding: 0px 6%;
   }
+  .d-lm {
+    display: none;
+  }
   .logo {
     width: 390px;
   }
   .logo-image {
-    width: 155px;
+    width: 113px;
   }
   .logo-name {
-    font-size: 18px;
+    font-size: 14px;
   }
   .header__number {
     font-size: 20px;
@@ -74,6 +77,9 @@
     display: none;
   }
   .stages-footer__description {
+    font-size: 18px;
+  }
+  .stages-footer__description > strong {
     font-size: 18px;
   }
   /* Индивидуальная консультация */

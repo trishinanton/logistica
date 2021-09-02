@@ -228,9 +228,6 @@
     font-size: 20px;
   }
   /* Другие услуги компании */
-  .services__name {
-    margin-top: 63px;
-  }
   .services .block-header > span::after {
     right: -179px;
   }

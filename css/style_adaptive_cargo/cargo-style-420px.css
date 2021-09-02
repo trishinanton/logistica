@@ -63,9 +63,12 @@
   .main-screen::after {
     display: none;
   }
+  .main-screen .block-header {
+    font-size: 27px;
+  }
   .main-screen .block-header > span:after {
     top: -13px;
-    right: -108px;
+    right: -41px;
   }
   .menu {
     margin-right: 18px;
@@ -279,9 +282,10 @@
     width: 41vw;
   }
   .stages-card__number {
-    font-size: 24px;
-    padding: 0px 15px;
+    font-size: 33px;
+    padding: 0px 8px;
     line-height: 67px;
+    -webkit-text-stroke: 1px white;
   }
   .stages-card__description {
     padding: 0 5px;
@@ -289,6 +293,9 @@
   }
   .graph {
     padding-top: 52px;
+  }
+  .graph .d-s {
+    display: block;
   }
   .graph__name {
     font-size: 30px;
@@ -298,7 +305,8 @@
     right: -7px;
   }
   .graph #comparisonchart table td {
-    padding: 45px 109px 40px 20px;
+    padding: 45px 65px 40px 20px;
+    font-size: 16px;
   }
   .graph__europe:after,
   .graph__china:after,
@@ -312,10 +320,11 @@
   }
   .price__name {
     font-size: 20px;
+    line-height: 1.3em;
   }
   .price__description {
     font-size: 14px;
-    line-height: 26px;
+    margin-top: 14px;
   }
   /* Другие услуги компании */
   .services {

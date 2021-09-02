@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px){
+    .d-m{
+        display: block;
+    }
     .grid{
         display: none;
         &-adaptive{
@@ -18,7 +21,6 @@
         padding: 0 7%
     }
     
-
     .logo{
         width: 501px;
         &-image{ 
@@ -47,6 +49,14 @@
         &:after{
             background-position: 40% center;
 
+        }
+        .block-header{
+            &>span{
+                &:after{
+                    top: 47px;
+                    right: -40px;
+                }
+            }
         }
     }
     .main-br{
@@ -116,9 +126,11 @@
         }
         &__purpose{
             margin-right: 0px;
-            line-height: 18px;
+            line-height:1.3em;
             &>p{
-                font-size: 16px;
+                
+            font-size: 19px;
+
             }
         }
         .img{
@@ -193,11 +205,23 @@
     }
     .event{
         margin-top: 109px;
+        &__name{
+            margin-left: 4px;
+        }
+        &__description{
+            line-height: 1.3em;
+            margin-top: 20px;
+            margin-top: 15px;
+            margin-left: 4px;
+        }
+        &__footer{
+            margin-left: 4px;
+        }
     }
 
     .block-header{
         margin-top: 0px;
-        line-height: 62px;
+        line-height: 1.2em;
         &:after{
             display: none;
         }
@@ -221,6 +245,23 @@
     .enterns{
         &-card{
             width: 100%;
+            &__description{ 
+                font-size: 21px;
+
+            }
+        }
+        .block-header{
+            &>span{
+                &:after{
+                    top: -16px;
+                    right: -115px;
+                }
+            }
+        }
+        &__footer{
+            
+            font-size: 20px;
+
         }
     }
     /* Другие услуги компании */
