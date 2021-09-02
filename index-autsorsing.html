@@ -12,10 +12,11 @@
     <script src='./js/build-and-preloader.js'></script>
     <!-- Стили -->
     <link rel="stylesheet" href="./css/style_autsorsing.css">
-    <!-- <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-1024px.css">
+    <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-1024px.css">
     <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-768px.css">
     <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-420px.css">
-    <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-375px.css"> -->
+    <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-375px.css">
+    <link rel="stylesheet" href="./css/style_adaptive_autsorsing/autsorsing-style-320px.css">
 </head>
 <!-- <Preloader> -->
 <div class="preloader js-progress">
@@ -39,11 +40,20 @@
         /* pointer-events: none; */
     }
 
+    .preloader .logo {
+        width: auto;
+    }
+
     .preloader__inner {
         position: absolute;
-        top: 50%;
+        height: 100vh;
+        width: 100vw;
+        /* top: 50%;
         left: 50%;
-        transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         opacity: 0.75;
         z-index: 2;
     }
@@ -153,7 +163,7 @@
             <div class="container">
                 <div class="body__bread"><span class="body__bread-main"><a href="/">Главная /</a></span> Аутсорсинг ВЭД
                 </div>
-                <h1 class="body__name block-header"><span>Аутсорсинг ВЭД – это удобно</span>
+                <h1 class="body__name block-header"><span>Аутсорсинг<br class="d-sm"><br class="d-m"> ВЭД – это удобно</span>
             </div>
         </div>
         </div>
@@ -180,15 +190,15 @@
                     <h2 class="about__name block-header"><span>Об услуге</span></h2>
                     <div class="about__purpose">
                         <p>
-                            <strong>Мы возьмем на себя функции отдела ВЭД</strong> в структуре вашего предприятия. Вам
-                            не нужно становиться импортером, вы получите товар по договору купли – продажи в России.
-                            Отсутствие скрытых расходов. Понятная стоимость услуг.
+                            <strong>Мы возьмем на себя функции отдела<br class="d-sm"> ВЭД</strong> в структуре вашего<br class="d-lm"> предприятия.<br class="d-sm"> Вам
+                            не нужно становиться импортером,<br class="d-sm"> вы получите<br class="d-lm"> товар по договору купли –<br class="d-sm"> продажи в России.
+                            Отсутствие скрытых<br class="d-lm"><br class="d-sm"> расходов. Понятная стоимость услуг.
                         </p>
                         <p>
-                            Для любого юридического лица самостоятельное ведение внешнеэкономической деятельности (ВЭД)
-                            сопряжено с дополнительными трудозатратами, нагрузкой на различные отделы фирмы,
-                            дополнительной отчетностью и ответственностью перед органами таможни и ФНС. Часто затраты на
-                            ввоз продукцию превышают расчетные показатели рентабельности внешнеторговых операций.
+                            Для любого юридического лица<br class="d-sm"> самостоятельное ведение<br class="d-sm"><br class="d-lm"> внешнеэкономической деятельности<br class="d-sm"> (ВЭД)
+                            сопряжено с<br class="d-lm"> дополнительными<br class="d-sm"> трудозатратами, нагрузкой на<br class="d-sm"> различные отделы<br class="d-lm"> фирмы,<br class="d-sm">
+                            дополнительной отчетностью и<br class="d-sm"> ответственностью перед<br class="d-lm"> органами<br class="d-sm"> таможни и ФНС. Часто затраты на
+                            ввоз<br class="d-sm"> продукцию<br class="d-lm"> превышают расчетные<br class="d-sm"> показатели рентабельности<br class="d-sm"> внешнеторговых<br class="d-lm"> операций.
                         </p>
 
 
@@ -205,16 +215,16 @@
             </div>
             <div class="about__event event">
                 <div class="event__name">В каких случаях выгодно передать ВЭД на аутсорсинг:</div>
-                <div class="event__description"><span>⬦</span> Импортные (экспортные) поставки редки (реже 1-2 раз в
-                    месяц) или нерегулярны;</div>
-                <div class="event__description"><span>⬦</span> Когда нет времени и желания разбираться в тонкостях ВЭД;
+                <div class="event__description"><span>⬦</span> Импортные (экспортные) поставки<br class="d-sm"> редки (реже 1-2 раз в
+                    месяц) или<br class="d-sm"> нерегулярны;</div>
+                <div class="event__description"><span>⬦</span> Когда нет времени и желания<br class="d-sm"> разбираться в тонкостях ВЭД;
                 </div>
-                <div class="event__description"><span>⬦</span> При развитии нового направления товаров;</div>
-                <div class="event__description"><span>⬦</span> Желание минимизировать риски связанные с проверками
-                    таможенных и налоговых органов.</div>
-                <div class="event__footer">Аутсорсинг внешнеэкономической деятельности от компании SK-Group trans решает
-                    все перечисленные выше проблемы.
-                    Мы оказываем все необходимые услуги в полном объеме, без рисков и переплат.</div>
+                <div class="event__description"><span>⬦</span> При развитии нового направления<br class="d-sm"> товаров;</div>
+                <div class="event__description"><span>⬦</span> Желание минимизировать риски<br class="d-sm"> связанные с проверками
+                    таможенных<br class="d-sm"> и налоговых органов.</div>
+                <div class="event__footer">Аутсорсинг внешнеэкономической<br class="d-sm"> деятельности от компании SK-Group<br class="d-sm"> trans решает
+                    все перечисленные выше<br class="d-sm"> проблемы. <br>
+                    Мы оказываем все необходимые услуги<br class="d-sm"> в полном объеме, без рисков и переплат.</div>
             </div>
         </div>
 
@@ -228,8 +238,20 @@
             <div class="grid__block-black"></div>
             <div class="grid__block-black"></div>
         </div>
+        <div class="grid">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
+        <div class="grid-adaptive">
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+            <div class="grid__block-black"></div>
+        </div>
         <div class="container">
-            <h2 class="enterns__name block-header services-header">Что входит в услуги аутсорсинга ВЭД</h2>
+            <h2 class="enterns__name block-header services-header"><span>Что входит в услуги аутсорсинга ВЭД</span></h2>
             <div class="enterns__description">
                 <div class="enterns-card">
                     <div class="enterns-card__number">1</div>
@@ -238,35 +260,35 @@
                 </div>
                 <div class="enterns-card">
                     <div class="enterns-card__number">2</div>
-                    <div class="enterns-card__description">Логистика. Выбираем самый выгодный способ доставки. Забираем
+                    <div class="enterns-card__description">Логистика. Выбираем самый выгодный<br class="d-lm"> способ доставки. Забираем
                         груз с фабрики и доставим до указанного вами адреса.</div>
                 </div>
                 <div class="enterns-card">
                     <div class="enterns-card__number">3</div>
-                    <div class="enterns-card__description">Подготовка всей необходимой документации: подготовка
-                        технической документации, оформление сертификации
+                    <div class="enterns-card__description">Подготовка всей необходимой<br class="d-lm"> документации: подготовка
+                        технической<br class="d-lm"> документации, оформление сертификации<br class="d-lm">
                         и прочее.</div>
                 </div>
                 <div class="enterns-card">
                     <div class="enterns-card__number">4</div>
-                    <div class="enterns-card__description">Таможенное оформление, уведомление
+                    <div class="enterns-card__description">Таможенное оформление, уведомление<br class="d-lm">
                         о выпуске товара.</div>
                 </div>
                 <div class="enterns-card">
                     <div class="enterns-card__number">5</div>
-                    <div class="enterns-card__description">Доставка на ваш склад. Согласовываем время прибытия на склад.
+                    <div class="enterns-card__description">Доставка на ваш склад. Согласовываем<br class="d-lm"> время прибытия на склад.
                     </div>
                 </div>
                 <div class="enterns-card">
                     <div class="enterns-card__number">6</div>
-                    <div class="enterns-card__description">Бухгалтерские документы. Передаем комплект документов
+                    <div class="enterns-card__description">Бухгалтерские документы. Передаем<br class="d-lm"> комплект документов
                         купли-продажи.</div>
                 </div>
             </div>
             <div class="enterns__footer">
-                Пользуясь услугой аутсорсинг внешнеэкономической деятельности наши клиенты снимают с себя проблемы по
-                техническому взаимодействию с таможенными органами и органами валютного контроля, получают уменьшение
-                сроков доставки, таможенного оформления и полную гарантию финансовой прозрачности всего процесса.
+                Пользуясь услугой аутсорсинг<br class="d-sm"> внешнеэкономической деятельности<br class="d-sm"> наши клиенты снимают с себя проблемы<br class="d-sm"> по
+                техническому взаимодействию с<br class="d-sm"> таможенными органами и органами<br class="d-sm"> валютного контроля, получают<br class="d-sm"> уменьшение
+                сроков доставки,<br class="d-sm"> таможенного оформления и полную<br class="d-sm"> гарантию финансовой прозрачности<br class="d-sm"> всего процесса.
             </div>
         </div>
     </section>
@@ -318,9 +340,9 @@
         <div class="container">
             <h2 class="consultation__name block-header"><span>Индивидуальная консультация</span></h2>
             <div class="consultation-form">
-                <p class="consultation-form__description">Бесплатно рассчитать стоимость доставки и возможного выкупа
-                    товара.<br class="consultation-br">
-                    Отправляйте заявки на почту или задавайте вопросы с <span>помощью мессенджера</span>.</p>
+                <p class="consultation-form__description">Бесплатно рассчитать стоимость доставки и<br class="d-sm"> возможного выкупа товара.<br class="d-lm"><br class="d-sm">
+       
+                    Отправляйте заявки на почту или задавайте<br class="d-sm"> вопросы с <span>помощью мессенджера</span>.</p>
                 <form action="send.php" method="POST" class="form-tamojnya">
                     <div class="form-tamojnya__wrapper">
                         <div class="consultation-form__contact">
